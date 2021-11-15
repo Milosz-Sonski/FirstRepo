@@ -1,0 +1,26 @@
+<html>
+<script>
+function czolg(model,rok,cena,waga,kaliber,zaloga)
+{
+this.model = model;
+this.rok = rok;
+this.cena = cena;
+this.waga = waga;
+this.kaliber = kaliber;
+this.zaloga = zaloga;
+}
+
+polski = new czolg("T-55AM Merida", 1928, 200000, 5, "175 mm", "8 osób");
+angielski = new czolg("Carden Loyd Mk. VI", 1937, 200000, 6, "200 mm", "4 osoby");
+niemiecki = new czolg("TK-3", 1929, 200000, 5, "195 mm", "5 osób");
+francuski = new czolg("7TP", 1931, 4500000, 6, "180 mm", "6 osób");
+amerykanski = new czolg("M3/M5 Stuart", 1939, 100000, 5, "207 mm", "9 osób");
+
+document.write("Model: "+  polski.model + ", Rocznik: "+ polski.rok +  ", Cena: "+ polski.cena + ", Waga: "+ polski.waga + ", Kaliber: " + polski.kaliber+", Załoga: "+polski.zaloga+"<br>");
+document.write("Model: "+  angielski.model + ", Rocznik: "+ angielski.rok + ", Cena: "+ angielski.cena + ", Waga: "+ angielski.waga+ ", Kaliber: "+angielski.kaliber+", Załoga: "+angielski.zaloga+"<br>");
+document.write("Model: "+  niemiecki.model + ", Rocznik: "+ niemiecki.rok + ", Cena: "+ niemiecki.cena + ", Waga: "+ niemiecki.waga+ ", Kaliber: "+niemiecki.kaliber+", Załoga: "+niemiecki.zaloga+"<br>");
+document.write("Model: "+  francuski.model + ", Rocznik: "+ francuski.rok + ", Cena: "+ francuski.cena + ", Waga: "+ francuski.waga+ ", Kaliber: "+francuski.kaliber+", Załoga: "+francuski.zaloga+"<br>");
+document.write("Model: "+  amerykanski.model + ", Rocznik: "+ amerykanski.rok + ", Cena: "+ amerykanski.cena + ", Waga: "+ amerykanski.waga+ ", Kaliber: "+amerykanski.kaliber+", Załoga: "+amerykanski.zaloga+"<br>");
+
+</script>
+</html>
