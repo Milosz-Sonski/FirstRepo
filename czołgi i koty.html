@@ -1,0 +1,34 @@
+<html>
+<script>
+function czolg(model,rok,cena,waga,kaliber){
+this.model = model;
+this.rok = rok;
+this.cena = cena;
+this.waga = waga;
+this.kaliber = kaliber;
+}
+
+function kot(rasa,imie,siersc,plec,wiek){
+this.rasa = rasa;
+this.imie = imie;
+this.siersc = siersc;
+this.plec = plec;
+this.wiek = wiek;
+}
+
+polski = new czolg("T-55AM Merida", 1928, 200000, 5, "175 mm");
+angielski = new czolg("Carden Loyd Mk. VI", 1937, 200000, 6, "200 mm");
+niemiecki = new czolg("TK-3", 1929, 200000, 5, "195 mm");
+
+kot1 = new kot("perski","Matylda","czarny","kotka",4);
+kot2 = new kot("bengalski","Mariolka","centkowany","kotka",5);
+kot3 = new kot("syberyjski","Sobel","biały","kotka",2);
+
+document.write("Pewnego pięknego dnia trzy piękne koty jechały kolejno trzema czołgami "+ kot1.rasa + ", " + kot2.rasa + " i " + kot3.rasa +"<br>");
+document.write("Pierwszy z tych kotów rzekł: " + kot1.imie + " " + "Pamiętaj! My jedziemy po zwycięstwo, nie ma innej opcji niż wygrać " + " " + kot2.imie + " " + "rzekła, świetna motywacja, a masz może papierosa?" + " " + kot3.imie + " " + "wręczył mu go i powiedział: Smacznego"+"<br>");
+document.write(kot2.imie + " rzekła, skąd w tobie tyle entuzjazmu?" + kot1.imie + " " + " powiedziała, ja ma o tym bardzo duże przekonanie, jestem pewna swoich racji" + kot3.imie + " " + "rzekł, ty " + kot1.siersc + "<br>");
+document.write("Dlaczego ty właściwie przynosisz pecha? Nie mam pojęcia rzekł"+ kot1.imie + " " + "Tak się przyjęło przywykłam do tego" + kot2.siersc + "Wykrzyczała: Uwaga przed nami!" + "Wszystkie koty wypłoszyły się i zobaczyły ogromny plaster bekonu" + "To chyba jakiś żart, powiedział" + kot3.siersc + "<br>");
+document.write();
+
+</script>
+</html>
