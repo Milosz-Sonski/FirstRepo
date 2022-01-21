@@ -1,0 +1,21 @@
+<html>
+<script>
+function helikopter(model,rok,kraj,waga,kaliber)
+{
+this.model = model;
+this.rok = rok;
+this.kraj = kraj;
+this.waga = waga;
+this.kaliber = kaliber;
+}
+
+hel1 = new helikopter("CH-47 Chinook", 1961,"Stany Zjednoczone ", "10 185 kg" , "12,7 mm");
+hel2 = new helikopter("Flettner Fl 282 Kolibri", 1941,"||| Rzesza " ,"760 kg" , "11,96 mm");
+hel3 = new helikopter("Eurocopter EC135", 1996,"Niemcy " ,"1460 kg" , "10,20 mm");
+
+document.write("Model: "+  hel1.model + ", Rocznik: "+ hel1.rok +  ", kraj: "+ hel1.kraj + ", Waga: "+ hel1.waga+", Kaliber: "+hel1.kaliber+"<br>");
+document.write("Model: "+  hel2.model + ", Rocznik: "+ hel2.rok + ", kraj: "+ hel2.kraj + ", Waga: "+ hel2.waga+ ", Kaliber: "+hel2.kaliber+"<br>");
+document.write("Model: "+  hel3.model + ", Rocznik: "+ hel3.rok + ", kraj: "+ hel3.kraj + ", Waga: "+ hel3.waga+ ", Kaliber: "+hel3.kaliber+"<br>");
+
+</script>
+</html>
