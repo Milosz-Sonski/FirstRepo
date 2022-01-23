@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Kalkulator podatkowy</title>
+<script type="text/javascript"> 
+</script>
+<body>
+  <form action="wartosc_brutto">
+    <label>Pensja brutto</label> <input type="text" name="Pensja brutto" /> <label>złotych</label>
+    </form>
+
+    <p>Wybierz rodzaj podatku:</p>
+
+    <div>
+     Podatek liniowy
+    </div>
+
+    <div>
+      <input type="radio" id="podatek_liniowy_19%" name="drone" value="podatek_liniowy_19%" checked>
+      <label for="podatek_liniowy_19%">19%</label>
+    </div>
+    
+    <div>
+     Podatek progresywny
+    </div>
+    
+
+    <div>
+      <input type="radio" id="podatek_progresywny_17%" name="drone" value="podatek_progresywny_17%">
+      <label for="podatek_progresywny_17%">17%</label>
+    </div>
+    
+    <div>
+      <input type="radio" id="podatek_progresywny_32%" name="drone" value="podatek_progresywny_32%">
+      <label for="podatek_progresywny_32%">32%</label>
+    </div>
+
+    <div>
+     Ryczalt
+    </div>
+
+    <div>
+      <input type="radio" id="ryczalt_3%" name="drone" value="ryczalt_3%">
+      <label for="ryczalt_3%">3%</label>
+    </div>
+
+    <div>
+      <input type="radio" id="ryczalt_8%" name="drone" value="ryczalt_8%">
+      <label for="ryczalt_8%">8%</label>
+    </div>
+
+    <br>
+    <form action="wartosc_netto">
+    <label>Kwota netto</label> <input type="text" name="Kwota netto" />
+    </form>
+</body> 
+</head>
+</html>
