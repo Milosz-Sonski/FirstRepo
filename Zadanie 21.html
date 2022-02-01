@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+Drabina stoi oparta o mur 
+</title>
+ <script language="JavaScript">
+function V(r,h)
+{
+ b_dana_son=parseFloat(r)
+ a_dana_son=parseFloat(h)
+ V_wynik=b_dana_son*a_dana_son
+ document.getElementsByName('obj')[0].value=V_wynik.toFixed(2);
+ alert("V="+V_wynik.toFixed(2)); 
+ pokaz1.innerHTML="V="+V_wynik.toFixed(2)+"<br>"; 
+}
+function Pc(r,h)
+{
+    b_dana_son=parseFloat(r)
+    a_dana_son=parseFloat(h)
+ Pc_wynik=(2*b_dana_son)+(2*a_dana_son)
+ document.getElementsByName('pole')[0].value=Pc_wynik.toFixed(2);
+ alert("Pc="+Pc_wynik.toFixed(2));
+ pokaz2.innerHTML="Pc="+Pc_wynik.toFixed(2);
+}
+ </script>
+</head>
+<body>
+Obliczanie Drabiny opartej o mur 
+<br> <br>
+<form name="formularz" action="..." onsubmit="V(this.promien.value,this.wysokosc.value);
+Pc(this.promien.value,this.wysokosc.value);return false">
+Podaj r=
+<input size="6" name="wyprowadz_pole_son">
+Podaj h=
+<input size="6" name="wyprowadz_obwod_son">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+V=
+<input size="6" name="pole">
+Pc=
+<input size="6" name="obwod">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
